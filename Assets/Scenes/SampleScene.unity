@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 140185532}
   - component: {fileID: 140185531}
   - component: {fileID: 140185534}
+  - component: {fileID: 140185535}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -281,19 +282,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 140185532}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 140185534}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: PlayOneShot
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: fad4c7f911ef59946904242f03d087f4, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &140185532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,7 +332,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -5143331740237431647, guid: 2f724a77e87c0864b98f298b479f8c7d, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -428,6 +417,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &140185535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140185529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4350d6de5ef4024a8529d2c9fceb2b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioClip: {fileID: 8300000, guid: d834d72601686f64db26dcdcf47793b3, type: 3}
 --- !u!1 &208712837
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,6 +668,7 @@ GameObject:
   - component: {fileID: 359073167}
   - component: {fileID: 359073166}
   - component: {fileID: 359073169}
+  - component: {fileID: 359073170}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -736,19 +739,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 359073167}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 359073169}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: PlayOneShot
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: ac3a86187773f6648a6175c2efe8c183, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &359073167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -797,8 +788,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -5143331740237431647, guid: 2f724a77e87c0864b98f298b479f8c7d, type: 2}
-  m_audioClip: {fileID: 8300000, guid: ac3a86187773f6648a6175c2efe8c183, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -883,6 +874,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &359073170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359073164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4350d6de5ef4024a8529d2c9fceb2b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioClip: {fileID: 8300000, guid: ac3a86187773f6648a6175c2efe8c183, type: 3}
 --- !u!1 &376225420
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,6 +973,7 @@ GameObject:
   - component: {fileID: 378838835}
   - component: {fileID: 378838836}
   - component: {fileID: 378838837}
+  - component: {fileID: 378838838}
   m_Layer: 0
   m_Name: BackgroundMusic
   m_TagString: Untagged
@@ -1100,6 +1105,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioMixer: {fileID: 24300002, guid: 2f724a77e87c0864b98f298b479f8c7d, type: 2}
+  _overallVolume: {fileID: 1104731846}
+  _buttonsVolume: {fileID: 2104957220}
+  _musicVolume: {fileID: 1173892658}
+--- !u!114 &378838838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378838833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed95f8f6e744cb848bff9ab533d9e9a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioMixer: {fileID: 24300002, guid: 2f724a77e87c0864b98f298b479f8c7d, type: 2}
+  _musicToggle: {fileID: 387923926}
+  IsMasterVolumeOn: 0
 --- !u!1 &387923924
 GameObject:
   m_ObjectHideFlags: 0
@@ -1184,20 +1207,8 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 378838837}
-        m_TargetAssemblyTypeName: SoundControleer, Assembly-CSharp
-        m_MethodName: ToggleMusik
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  m_IsOn: 1
+      m_Calls: []
+  m_IsOn: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,22 +1972,10 @@ MonoBehaviour:
   m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.0001
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 378838837}
-        m_TargetAssemblyTypeName: SoundControleer, Assembly-CSharp
-        m_MethodName: SetMasterVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1131537040
 GameObject:
   m_ObjectHideFlags: 0
@@ -2176,22 +2175,10 @@ MonoBehaviour:
   m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.0001
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 378838837}
-        m_TargetAssemblyTypeName: SoundControleer, Assembly-CSharp
-        m_MethodName: SetBackgroundVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1189006624
 GameObject:
   m_ObjectHideFlags: 0
@@ -2841,6 +2828,7 @@ GameObject:
   - component: {fileID: 1590625537}
   - component: {fileID: 1590625536}
   - component: {fileID: 1590625539}
+  - component: {fileID: 1590625540}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -2911,19 +2899,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1590625537}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1590625539}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: PlayOneShot
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: fad4c7f911ef59946904242f03d087f4, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1590625537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2972,8 +2948,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -5143331740237431647, guid: 2f724a77e87c0864b98f298b479f8c7d, type: 2}
-  m_audioClip: {fileID: 8300000, guid: fad4c7f911ef59946904242f03d087f4, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -3058,6 +3034,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1590625540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590625534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4350d6de5ef4024a8529d2c9fceb2b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioClip: {fileID: 8300000, guid: fad4c7f911ef59946904242f03d087f4, type: 3}
 --- !u!1 &1628599965
 GameObject:
   m_ObjectHideFlags: 0
@@ -3795,22 +3784,10 @@ MonoBehaviour:
   m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.0001
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 378838837}
-        m_TargetAssemblyTypeName: SoundControleer, Assembly-CSharp
-        m_MethodName: SetButtonsVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
